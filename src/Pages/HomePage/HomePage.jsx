@@ -23,6 +23,7 @@ const Home = () => {
     // Récupérer les photos depuis le backend
     fetchPhotos(leafletMap);
 
+    
     return () => {
       leafletMap.remove();
     };
