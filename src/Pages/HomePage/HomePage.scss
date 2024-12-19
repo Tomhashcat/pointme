@@ -1,0 +1,72 @@
+@keyframes neon-border {
+     0% {
+       border-image-source: linear-gradient(45deg, fuchsia, blue);
+     }
+     50% {
+       border-image-source: linear-gradient(135deg, blue, fuchsia);
+     }
+     100% {
+       border-image-source: linear-gradient(45deg, fuchsia, blue);
+     }
+   }
+   
+   /* Animation pulsée pour l'effet de texte lumineux */
+   @keyframes pulsate {
+     100% {
+       text-shadow:
+       0 0 2px #fff,
+       0 0 4px #fff,
+       0 0 6px #fff,
+       0 0 10px #bc13fe,
+       0 0 35px #bc13fe,
+       0 0 55px #bc13fe,
+       0 0 70px #bc13fe,
+       0 0 80px #bc13fe;
+     }
+   
+     0% {
+       box-shadow:
+         0 0 2px #fff,
+         0 0 4px #fff,
+         0 0 6px #fff,
+         0 0 10px #bc13fe,
+         0 0 45px #bc13fe,
+         0 0 55px #bc13fe,
+         0 0 70px #bc13fe,
+         0 0 80px #bc13fe;
+     }
+   }
+   
+   #map {
+     position: relative;
+     height: 500px;
+     border: 7px solid transparent; /* Ajoute une bordure transparente pour utiliser border-image */
+     border-radius: 25px;
+     margin: 50px auto;
+     overflow: hidden;
+     z-index: 1;
+     animation: pulsate 1.5s infinite alternate; /* Animation pulsée sur le texte */
+     box-shadow: 0 0 .2rem #fff,
+                 0 0 .2rem #fff,
+                 0 0 .2rem #fff,
+                 0 0 2rem #bc13fe,
+                 0 0 1rem #bc13fe,
+                 0 0 2.8rem #bc13fe,
+                 inset 0 0 1.3rem #bc13fe;
+   }
+   
+   h2 {
+     font-size: 54px;
+     animation: pulsate 1.5s infinite alternate; /* Animation pulsée sur le texte */
+     border: 0.2rem solid #fff;
+     border-radius: 2rem;
+     color: #2f2e9c;
+     padding: 0.4em;
+     box-shadow: 0 0 .2rem #fff,
+                 0 0 .2rem #fff,
+                 0 0 2rem #bc13fe,
+                 0 0 0.8rem #bc13fe,
+                 0 0 2.8rem #bc13fe,
+                 inset 0 0 1.3rem #bc13fe;
+   }
+   
